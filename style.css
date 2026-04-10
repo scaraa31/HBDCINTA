@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.section {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section.active {
+    display: flex;
+    animation: fadeIn 1s ease;
+}
+
+.center {
+    max-width: 500px;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1e4d;
+}
+
+/* 📸 MEMORIES */
+.memory {
+    margin-bottom: 20px;
+}
+
+.memory img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* ❤️ THINGS */
+.things-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    display: none;
+    margin-top: 10px;
+    color: #ffb3c1;
+}
+
+/* 🧩 PUZZLE */
+#puzzle {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🎂 CAKE */
+#cake img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+/* ✨ ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
